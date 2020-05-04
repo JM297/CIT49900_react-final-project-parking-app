@@ -97,8 +97,8 @@ export default function Map() {
       <div className="buttons" >
         {collectionItems.map((c, idx) => <button className="button" key={idx} onClick={() => setCenter([c.latitude, c.longitude])}>{c.name}</button>)}
       </div><br />
-      <button className="button" style={{ marginRight: '10px' }} onClick={(() => setCenter([position.x, position.y]))}>You</button>
-      <button className="button" style={{ marginLeft: '10px' }} onClick={() => setCenter([39.7741143, -86.1761807])}>Reset</button>
+      <button className="button" onClick={(() => setCenter([position.x, position.y]))}>You</button>
+      <button className="button" onClick={() => setCenter([39.7741143, -86.1761807])}>Reset</button>
     </div>
   );
 }
