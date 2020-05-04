@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+}
+
+.button {
+	background-color:#7892c2;
+	border-radius:30px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:14px 50px;
+	text-decoration:none;
+  width: 380px;
+  margin-top: 10px;
+}
+.button:hover {
+	background-color:#476e9e;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
